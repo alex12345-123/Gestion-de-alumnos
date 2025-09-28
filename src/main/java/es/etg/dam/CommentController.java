@@ -1,17 +1,17 @@
 package es.etg.dam;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import javax.mvc.Models;
 import javax.mvc.annotation.Controller;
 import javax.mvc.annotation.CsrfValid;
 import javax.mvc.binding.BindingResult;
-import javax.validation.Valid;
-import javax.validation.executable.ExecutableType;
-import javax.validation.executable.ValidateOnExecution;
-import javax.ws.rs.BeanParam;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import jakarta.validation.Valid;
+import jakarta.validation.executable.ExecutableType;
+import jakarta.validation.executable.ValidateOnExecution;
+import jakarta.ws.rs.BeanParam;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
 
 @Controller
 @Path("comments")

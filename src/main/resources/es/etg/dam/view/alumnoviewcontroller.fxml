@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/20" 
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="es.etg.dam.view.alumnoviewcontroller"
+      spacing="10" alignment="CENTER" padding="10">
+
+    <TextField fx:id="txtNombre" promptText="Nombre"/>
+    <TextField fx:id="txtApellidos" promptText="Apellidos"/>
+    <TextField fx:id="txtEdad" promptText="Edad"/>
+    <Button fx:id="btnInsertar" text="Insertar" onAction="#insertarAlumno"/>
+    <Button fx:id="btnListar" text="Listar" onAction="#listarAlumnos"/>
+    <TextArea fx:id="txtAreaAlumnos" prefHeight="200"/>
+</VBox>
