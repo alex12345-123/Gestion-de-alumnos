@@ -6,9 +6,9 @@
 
 
 <VBox xmlns="http://javafx.com/javafx/20" 
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="es.etg.dam.view.alumnoviewcontroller"
-      spacing="10" alignment="CENTER">
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="es.etg.dam.view.alumnoviewcontroller"
+    spacing="10" alignment="CENTER">
 
     <padding>
         <Insets top="10" right="10" bottom="10" left="10"/>

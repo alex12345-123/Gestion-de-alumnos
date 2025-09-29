@@ -19,7 +19,6 @@ public class alumnoController extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // Inicializo el modelo en memoria
         alumnosdaomemoria daoMemoria = new alumnosdaomemoria();
         service = new alumnoS(daoMemoria);
 

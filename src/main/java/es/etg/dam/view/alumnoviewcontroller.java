@@ -50,11 +50,11 @@ public class alumnoviewcontroller {
         StringBuilder sb = new StringBuilder();
         alumnoController.listarAlumnos().forEach(a ->
             sb.append(a.getNombre())
-              .append(" ")
-              .append(a.getApellidos())
-              .append(", Edad: ")
-              .append(a.getEdad())
-              .append("\n")
+            .append(" ")
+            .append(a.getApellidos())
+            .append(", Edad: ")
+            .append(a.getEdad())
+            .append("\n")
         );
         txtAreaAlumnos.setText(sb.toString());
     }
