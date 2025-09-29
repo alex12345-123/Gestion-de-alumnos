@@ -45,7 +45,6 @@ public class alumnoviewcontroller {
         }
     }
 
-    // Método que se llama al pulsar "Listar"
     @FXML
     private void listarAlumnos() {
         StringBuilder sb = new StringBuilder();

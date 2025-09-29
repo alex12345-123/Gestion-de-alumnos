@@ -13,6 +13,6 @@ public class alumnoS{
         dao.insertar(alumno); 
     }
     public List<alumno> listarAlumnos() {
-        return dao.listar(); // 
+        return dao.listar(); 
     }
 }

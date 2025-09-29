@@ -1,8 +1,7 @@
 /home/debian/Downloads/alumnos/src/main/java/es/etg/dam/App.java
-/home/debian/Downloads/alumnos/src/main/java/es/etg/dam/CommentController.java
-/home/debian/Downloads/alumnos/src/main/java/es/etg/dam/CommentForm.java
-/home/debian/Downloads/alumnos/src/main/java/es/etg/dam/Comments.java
+/home/debian/Downloads/alumnos/src/main/java/es/etg/dam/alumnoS.java
 /home/debian/Downloads/alumnos/src/main/java/es/etg/dam/controller/alumnoController.java
 /home/debian/Downloads/alumnos/src/main/java/es/etg/dam/model/alumno.java
 /home/debian/Downloads/alumnos/src/main/java/es/etg/dam/model/alumnosDAO.java
 /home/debian/Downloads/alumnos/src/main/java/es/etg/dam/model/alumnosdaomemoria.java
+/home/debian/Downloads/alumnos/src/main/java/es/etg/dam/view/alumnoviewcontroller.java

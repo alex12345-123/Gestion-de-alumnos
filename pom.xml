@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>es.etg.dam</groupId>
+    <groupId>es.etg.dam.alumnos</groupId>
     <artifactId>alumnos</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
-
-    <name>MVC 1.0 Blank Project (from https://github.com/making/mvc-1.0-blank)</name>
-
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <javafx.version>21.0.2</javafx.version>
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.source>21</maven.compiler.source>
     </properties>
 
     <dependencies>
@@ -47,7 +45,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>26-ea+7</version>
+            <version>21.0.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -69,24 +67,36 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>26-ea+7</version>
+            <version>21.0.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>26-ea+7</version>
+            <version>21.0.2</version>
         </dependency>
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <release>21</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>es.etg.dam.controller.alumnoController</mainClass>
+                    <options>
+                        <option>--add-modules</option>
+                        <option>javafx.controls,javafx.fxml</option>
+                    </options>
                 </configuration>
             </plugin>
         </plugins>
